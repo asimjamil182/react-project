@@ -1,0 +1,867 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <header class=" bg-secondary shadow-sm text-primary font-Roboto">
+            <div class="hidden"></div>
+            <div class="w-full bg-color2 text-secondary py-2 hidden md:block">
+                <div class="flex px-4 lg:w-[70%] lg:m-auto lg:p-0">
+                    <div class="flex-1 flex justify-start items-center">
+                        <div class="pr-5"><a target="_blank" class="flex items-center"><i
+                                    class="bi-telephone text-secondary"></i> <span class="pl-2">+9712233344</span></a>
+                        </div>
+                        <div class="pr-5"><a target="_blank" class="flex items-center"><i
+                                    class="bi-envelope text-secondary"></i><span
+                                    class="pl-2">username@gmail.com</span></a></div>
+                    </div>
+                    <div class="flex-1 flex justify-end items-center">
+                        <div class="pl-5"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                    width="1em" height="1em" fill="currentColor">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg></a></div>
+                        <div class="pl-5"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                    width="1em" height="1em" fill="currentColor">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                    </path>
+                                </svg></a></div>
+                        <div class="pl-5"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                    width="1em" height="1em" fill="currentColor">
+                                    <path
+                                        d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z">
+                                    </path>
+                                </svg></a></div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="text-white flex px-4 items-center flex-wrap  py-4 lg:px-0 w-full lg:w-[70%] lg:flex-nowrap lg:m-auto justify-between border-b border-lightgray">
+                <div class="w-[50%] md:w-[30%] flex items-center">
+                    <div class="font-semibold"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                width="20" height="20" fill="currentColor" class="md:hidden fill-primary inline-block">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                                </path>
+                            </svg></span><span class="text-color2">Brand</span> Logo</div>
+                </div>
+                <div class="w-full md:w-[40%] px-2 order-1 md:order-[0] hidden md:flex">
+                    <div class="hidden"></div>
+                    <div class="mt-2 md:m-0 w-full relative" style="z-index: 0;">
+                        <div class="flex border border-lightgray rounded-full overflow-hidden w-full"><input type="text"
+                                class="w-full p-1 px-3 placeholder:font-light focus:outline-none font-normal"
+                                placeholder="search..." name="" id=""><button
+                                class="bg-color2 text-secondary px-3"><span class="hidden md:block">Search</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em"
+                                    fill="currentColor" class="md:hidden fill-secondary">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                    </path>
+                                </svg></button></div>
+                        <div id="searchDropdown" class="hidden">
+                            <ul class="">
+                                <li
+                                    class=" border-b border-[#d8d8d8] p-2 hover:bg-color2 hover:text-secondary cursor-pointer">
+                                    iPhone 14 pro max 256 black hk</li>
+                                <li
+                                    class=" border-b border-[#d8d8d8] p-2 hover:bg-color2 hover:text-secondary cursor-pointer">
+                                    14 pro max 128 blk china</li>
+                                <li
+                                    class=" border-b border-[#d8d8d8] p-2 hover:bg-color2 hover:text-secondary cursor-pointer">
+                                    14 pro 256 gold japan</li>
+                                <li
+                                    class=" border-b border-[#d8d8d8] p-2 hover:bg-color2 hover:text-secondary cursor-pointer">
+                                    14 pro 256 gold cahanda</li>
+                                <li
+                                    class=" border-b border-[#d8d8d8] p-2 hover:bg-color2 hover:text-secondary cursor-pointer">
+                                    14 pro 256 gold chanada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[50%] md:w-[30%]  self-end flex justify-end items-center static">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="29" height="29"
+                            fill="currentColor" class="pl-3 hover:fill-color2 cursor-pointer hidden md:block">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                            </path>
+                        </svg></div>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="29" height="29"
+                            fill="currentColor" class="pl-3 hover:fill-color2 cursor-pointer hidden md:block">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                        </svg></div>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="29" height="29"
+                            fill="currentColor" class="pl-3 hover:fill-color2 cursor-pointer md:hidden">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                            </path>
+                        </svg></div>
+                    <div class="relative" style="z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16" width="29" height="29" fill="currentColor"
+                            class="pl-3 hover:fill-color2 cursor-pointer">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+                            </path>
+                        </svg>
+                        <ul class="hidden">
+                            <li id="userDropdown"
+                                class=" p-1 px-3 text-sm hover:bg-color2 hover:text-secondary cursor-pointer">Order</li>
+                            <li id="userDropdown"
+                                class=" p-1 px-3 text-sm hover:bg-color2 hover:text-secondary cursor-pointer">Setting
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex justify-center static">
+                <ul class="w-full lg:w-[50%] px-2 flex bg-secondary font-semibold uppercase text-sm py-2 z-[2]"
+                    style="z-index: 0;">
+                    <div class="flex-1 px-2 text-center"><span class="hover:text-color2 cursor-pointer">Home</span>
+                    </div>
+                    <div class="flex-1 px-2 text-center"><span
+                            class="hover:text-color2 cursor-pointer">Catagories</span>
+                        <div class="hidden">
+                            <div class="w-full lg:w-[70%] lg:m-auto text-left px-4 lg:px-0 py-4">
+                                <div class="flex flex-wrap md:flex-nowrap py-4 items-start justify-between max-h-[15%]">
+                                    <div class="w-full md:w-[25%] pr-4 text-[13px]">
+                                        <div class="text-color2 border-b border-lightgray pb-1">Catagories</div>
+                                        <ul class="text-md text-[13px] pt-1">
+                                            <li class="hover:text-color2 cursor-pointer">Cloth</li>
+                                            <li class="hover:text-color2 cursor-pointer">Shoes</li>
+                                            <li class="hover:text-color2 cursor-pointer">Jackets</li>
+                                            <li class="hover:text-color2 cursor-pointer">Shorts</li>
+                                            <li class="hover:text-color2 cursor-pointer">Jewlery</li>
+                                            <li class="hover:text-color2 cursor-pointer">Bag</li>
+                                        </ul>
+                                    </div>
+                                    <div class="w-full md:w-[75%] py-2 md:p-0">
+                                        <div class="flex justify-between items-start w-full overflow-x-auto">
+                                            <div class="flex-none md:flex-1 w-2/3 md:w-[30%] pr-3 md:pr-0"><img
+                                                    src="https://placehold.co/300" alt=""></div>
+                                            <div class="flex-none md:flex-1 w-2/3 md:w-[30%] pr-3 md:pr-0"><img
+                                                    src="https://placehold.co/300" alt=""></div>
+                                            <div class="flex-none md:flex-1 w-2/3 md:w-[30%] pr-3 md:pr-0"><img
+                                                    src="https://placehold.co/300" alt=""></div>
+                                        </div>
+                                        <div class="border-b border-lightgray py-2"></div><a href="#"
+                                            class=" float-right py-3 text-color2">View all <svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20"
+                                                height="20" fill="currentColor" class=" inline-block">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                                </path>
+                                            </svg> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 px-2 text-center"><span class="hover:text-color2 cursor-pointer">Men</span></div>
+                    <div class="flex-1 px-2 text-center"><span class="hover:text-color2 cursor-pointer">Women's</span>
+                    </div>
+                    <div class="flex-1 px-2 text-center"><span class="hover:text-color2 cursor-pointer">Jewelery</span>
+                    </div>
+                    <div class="flex-1 px-2 text-center"><span class="hover:text-color2 cursor-pointer">Perfume</span>
+                    </div>
+                    <div class="flex-1 px-2 text-center"><span class="hover:text-color2 cursor-pointer">Blog</span>
+                    </div>
+                    <div class="flex-1 px-2 text-center"><span class="hover:text-color2 cursor-pointer">Hot
+                            offers</span></div>
+                </ul>
+            </div>
+            <div class="md:hidden hidden">
+                <ul class=" relative h-full">
+                    <li class="p-2 hover:bg-color2 hover:text-secondary">Home</li>
+                    <li class="p-2 hover:bg-color2 hover:text-secondary"><a>Collection <span><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em"
+                                    fill="currentColor" class=" inline-block float-right mt-1">
+                                    <path
+                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z">
+                                    </path>
+                                </svg></span></a>
+                        <ul class="hidden">
+                            <li class="text-color2 p-1 hover:opacity-80">Summer</li>
+                            <li class="text-color2 p-1 hover:opacity-80">Winter</li>
+                        </ul>
+                    </li>
+                    <li class="p-2 hover:bg-color2 hover:text-secondary"><a href="#">Men</a>
+                        <div class="hidden">
+                            <div class="w-full lg:w-[70%] lg:m-auto text-left px-4 lg:px-0 py-4">
+                                <div class="flex flex-wrap md:flex-nowrap py-4 items-start justify-between max-h-[15%]">
+                                    <div class="w-full md:w-[25%] pr-4 text-[13px]">
+                                        <div class="text-color2 border-b border-lightgray pb-1">Catagories</div>
+                                        <ul class="text-md text-[13px] pt-1">
+                                            <li class="hover:text-color2 cursor-pointer">Cloth</li>
+                                            <li class="hover:text-color2 cursor-pointer">Shoes</li>
+                                            <li class="hover:text-color2 cursor-pointer">Jackets</li>
+                                            <li class="hover:text-color2 cursor-pointer">Shorts</li>
+                                            <li class="hover:text-color2 cursor-pointer">Jewlery</li>
+                                            <li class="hover:text-color2 cursor-pointer">Bag</li>
+                                        </ul>
+                                    </div>
+                                    <div class="w-full md:w-[75%] py-2 md:p-0">
+                                        <div class="flex justify-between items-start w-full overflow-x-auto">
+                                            <div class="flex-none md:flex-1 w-2/3 md:w-[30%] pr-3 md:pr-0"><img
+                                                    src="https://placehold.co/300" alt=""></div>
+                                            <div class="flex-none md:flex-1 w-2/3 md:w-[30%] pr-3 md:pr-0"><img
+                                                    src="https://placehold.co/300" alt=""></div>
+                                            <div class="flex-none md:flex-1 w-2/3 md:w-[30%] pr-3 md:pr-0"><img
+                                                    src="https://placehold.co/300" alt=""></div>
+                                        </div>
+                                        <div class="border-b border-lightgray py-2"></div><a href="#"
+                                            class=" float-right py-3 text-color2">View all <svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20"
+                                                height="20" fill="currentColor" class=" inline-block">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                                </path>
+                                            </svg> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="p-2 hover:bg-color2 hover:text-secondary"><a href="#">Women</a></li>
+                    <li class="p-2 hover:bg-color2 hover:text-secondary"><a href="#">Kids</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="w-full lg:w-[70%] lg:m-auto lg:overflow-hidden font-Roboto">
+            <div class="hero-silder w-full">
+                <div class="carousel-root">
+                    <div class="carousel carousel-slider" style="width: 100%;">
+                        <ul class="control-dots"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="17"
+                                height="17" fill="currentColor" class="inline-block p-1 fill-color2">
+                                <circle cx="8" cy="8" r="8"></circle>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="17" height="17"
+                                fill="currentColor" class="inline-block p-1 fill-color2">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="17" height="17"
+                                fill="currentColor" class="inline-block p-1 fill-color2">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                            </svg></ul><button type="button" aria-label="previous slide / item"
+                            class="control-arrow control-prev control-disabled"></button>
+                        <div class="slider-wrapper axis-horizontal">
+                            <ul class="slider animated"
+                                style="transform: translate3d(0px, 0px, 0px); transition-duration: 350ms;">
+                                <li class="slide selected previous">
+                                    <div class=" relative"><img src="https://placehold.co/700X350"
+                                            class="!hidden md:!block"><img src="https://placehold.co/350X350"
+                                            class=" md:!hidden"><a href="#"
+                                            class=" uppercase bg-color2 text-secondary px-6 py-2 rounded-full font-semibold absolute left-16 bottom-16">Shop
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                                height="1em" fill="currentColor" class=" inline-block mb-1">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                                </path>
+                                            </svg></a></div>
+                                </li>
+                                <li class="slide">
+                                    <div class=" relative"><img src="https://placehold.co/700X350"
+                                            class="!hidden md:!block"><img src="https://placehold.co/350X350"
+                                            class=" md:!hidden"><a href="#"
+                                            class=" uppercase bg-color2 text-secondary px-6 py-2 rounded-full font-semibold absolute left-16 bottom-16">Shop
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                                height="1em" fill="currentColor" class=" inline-block mb-1">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                                </path>
+                                            </svg></a></div>
+                                </li>
+                                <li class="slide">
+                                    <div class=" relative"><img src="https://placehold.co/700X350"
+                                            class="!hidden md:!block"><img src="https://placehold.co/350X350"
+                                            class=" md:!hidden"><a href="#"
+                                            class=" uppercase bg-color2 text-secondary px-6 py-2 rounded-full font-semibold absolute left-16 bottom-16">Shop
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                                height="1em" fill="currentColor" class=" inline-block mb-1">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                                </path>
+                                            </svg></a></div>
+                                </li>
+                            </ul>
+                        </div><button type="button" aria-label="next slide / item"
+                            class="control-arrow control-next"></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="py-4 md:py-6"></div>
+                <div class="text-center uppercase text-2xl text-color2 py-4">Featured Products</div>
+                <div class="alice-carousel">
+                    <div>
+                        <div class="alice-carousel__wrapper" style="padding-left: 0px; padding-right: 0px;">
+                            <ul class="alice-carousel__stage"
+                                style="transition: transform 0ms ease 0ms; transform: translate3d(0px, 0px, 0px);">
+                                <li class="alice-carousel__stage-item __active __target" style="width: 187.459px;">
+                                    <div
+                                        class="product-card relative bg-secondary rounded-md overflow-hidden shadow m-2">
+                                        <img src="https://placehold.co/300" class="w-full" alt=""><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                            height="1em" fill="currentColor"
+                                            class=" absolute top-4 right-4 cursor-pointer fill-color2">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                            </path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32"
+                                            height="32" fill="currentColor"
+                                            class=" absolute right-4 cursor-pointer fill-secondary bg-color2 rounded-full p-2 -mt-4">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                            </path>
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                            </path>
+                                        </svg>
+                                        <div class="p-1">
+                                            <div class=" pt-1 uppercase text-primary text-ellipsis text-sm">product name
+                                            </div>
+                                            <div class="">
+                                                <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                            <div class="text-color2 pt-1 text-xl"><span>AED</span> 300</div><button
+                                                class="mt-1 uppercase rounded-full bg-color2 text-secondary py-2 px-2 font-semibold text-[13px] w-full mb-1">Add
+                                                to cart</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="alice-carousel__stage-item __active" style="width: 187.459px;">
+                                    <div
+                                        class="product-card relative bg-secondary rounded-md overflow-hidden shadow m-2">
+                                        <img src="https://placehold.co/300" class="w-full" alt=""><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                            height="1em" fill="currentColor"
+                                            class=" absolute top-4 right-4 cursor-pointer fill-color2">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                            </path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32"
+                                            height="32" fill="currentColor"
+                                            class=" absolute right-4 cursor-pointer fill-secondary bg-color2 rounded-full p-2 -mt-4">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                            </path>
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                            </path>
+                                        </svg>
+                                        <div class="p-1">
+                                            <div class=" pt-1 uppercase text-primary text-ellipsis text-sm">product name
+                                            </div>
+                                            <div class="">
+                                                <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                            <div class="text-color2 pt-1 text-xl"><span>AED</span> 300</div><button
+                                                class="mt-1 uppercase rounded-full bg-color2 text-secondary py-2 px-2 font-semibold text-[13px] w-full mb-1">Add
+                                                to cart</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="alice-carousel__stage-item __active" style="width: 187.459px;">
+                                    <div
+                                        class="product-card relative bg-secondary rounded-md overflow-hidden shadow m-2">
+                                        <img src="https://placehold.co/300" class="w-full" alt=""><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                            height="1em" fill="currentColor"
+                                            class=" absolute top-4 right-4 cursor-pointer fill-color2">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                            </path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32"
+                                            height="32" fill="currentColor"
+                                            class=" absolute right-4 cursor-pointer fill-secondary bg-color2 rounded-full p-2 -mt-4">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                            </path>
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                            </path>
+                                        </svg>
+                                        <div class="p-1">
+                                            <div class=" pt-1 uppercase text-primary text-ellipsis text-sm">product name
+                                            </div>
+                                            <div class="">
+                                                <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                            <div class="text-color2 pt-1 text-xl"><span>AED</span> 300</div><button
+                                                class="mt-1 uppercase rounded-full bg-color2 text-secondary py-2 px-2 font-semibold text-[13px] w-full mb-1">Add
+                                                to cart</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="alice-carousel__stage-item __active" style="width: 187.459px;">
+                                    <div
+                                        class="product-card relative bg-secondary rounded-md overflow-hidden shadow m-2">
+                                        <img src="https://placehold.co/300" class="w-full" alt=""><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                            height="1em" fill="currentColor"
+                                            class=" absolute top-4 right-4 cursor-pointer fill-color2">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                            </path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32"
+                                            height="32" fill="currentColor"
+                                            class=" absolute right-4 cursor-pointer fill-secondary bg-color2 rounded-full p-2 -mt-4">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                            </path>
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                            </path>
+                                        </svg>
+                                        <div class="p-1">
+                                            <div class=" pt-1 uppercase text-primary text-ellipsis text-sm">product name
+                                            </div>
+                                            <div class="">
+                                                <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                            <div class="text-color2 pt-1 text-xl"><span>AED</span> 300</div><button
+                                                class="mt-1 uppercase rounded-full bg-color2 text-secondary py-2 px-2 font-semibold text-[13px] w-full mb-1">Add
+                                                to cart</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="alice-carousel__stage-item __active" style="width: 187.459px;">
+                                    <div
+                                        class="product-card relative bg-secondary rounded-md overflow-hidden shadow m-2">
+                                        <img src="https://placehold.co/300" class="w-full" alt=""><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                            height="1em" fill="currentColor"
+                                            class=" absolute top-4 right-4 cursor-pointer fill-color2">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                            </path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32"
+                                            height="32" fill="currentColor"
+                                            class=" absolute right-4 cursor-pointer fill-secondary bg-color2 rounded-full p-2 -mt-4">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                            </path>
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                            </path>
+                                        </svg>
+                                        <div class="p-1">
+                                            <div class=" pt-1 uppercase text-primary text-ellipsis text-sm">product name
+                                            </div>
+                                            <div class="">
+                                                <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                            <div class="text-color2 pt-1 text-xl"><span>AED</span> 300</div><button
+                                                class="mt-1 uppercase rounded-full bg-color2 text-secondary py-2 px-2 font-semibold text-[13px] w-full mb-1">Add
+                                                to cart</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="alice-carousel__stage-item" style="width: 187.459px;">
+                                    <div
+                                        class="product-card relative bg-secondary rounded-md overflow-hidden shadow m-2">
+                                        <img src="https://placehold.co/300" class="w-full" alt=""><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                            height="1em" fill="currentColor"
+                                            class=" absolute top-4 right-4 cursor-pointer fill-color2">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                            </path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32"
+                                            height="32" fill="currentColor"
+                                            class=" absolute right-4 cursor-pointer fill-secondary bg-color2 rounded-full p-2 -mt-4">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                            </path>
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                            </path>
+                                        </svg>
+                                        <div class="p-1">
+                                            <div class=" pt-1 uppercase text-primary text-ellipsis text-sm">product name
+                                            </div>
+                                            <div class="">
+                                                <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                            <div class="text-color2 pt-1 text-xl"><span>AED</span> 300</div><button
+                                                class="mt-1 uppercase rounded-full bg-color2 text-secondary py-2 px-2 font-semibold text-[13px] w-full mb-1">Add
+                                                to cart</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="alice-carousel__stage-item" style="width: 187.459px;">
+                                    <div
+                                        class="product-card relative bg-secondary rounded-md overflow-hidden shadow m-2">
+                                        <img src="https://placehold.co/300" class="w-full" alt=""><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                            height="1em" fill="currentColor"
+                                            class=" absolute top-4 right-4 cursor-pointer fill-color2">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                            </path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32"
+                                            height="32" fill="currentColor"
+                                            class=" absolute right-4 cursor-pointer fill-secondary bg-color2 rounded-full p-2 -mt-4">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                                            </path>
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                                            </path>
+                                        </svg>
+                                        <div class="p-1">
+                                            <div class=" pt-1 uppercase text-primary text-ellipsis text-sm">product name
+                                            </div>
+                                            <div class="">
+                                                <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                        </path>
+                                                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="14" height="14" fill="currentColor"
+                                                        class=" inline-block fill-primary pr-1">
+                                                        <path
+                                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                            <div class="text-color2 pt-1 text-xl"><span>AED</span> 300</div><button
+                                                class="mt-1 uppercase rounded-full bg-color2 text-secondary py-2 px-2 font-semibold text-[13px] w-full mb-1">Add
+                                                to cart</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="alice-carousel__dots">
+                        <li class="alice-carousel__dots-item __active __custom"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16" width="17" height="17" fill="currentColor" class=" fill-color2 p-1">
+                                <circle cx="8" cy="8" r="8"></circle>
+                            </svg></li>
+                        <li class="alice-carousel__dots-item __custom"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16" width="17" height="17" fill="currentColor" class=" fill-color2 p-1">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                            </svg></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="text-center uppercase text-2xl text-color2 py-4">Top Catagories</div>
+                <div class="flex flex-wrap lg:flex-nowrap">
+                    <div class="w-full md:w-[50%] lg:w-[25%] relative"><img src="https://placehold.co/500X600"
+                            alt=""><button
+                            class=" absolute right-12 bottom-12 uppercase rounded-full py-1 px-4 bg-color2 text-secondary shadow">cloths
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em"
+                                fill="currentColor" class=" inline-block mb-1">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                </path>
+                            </svg></button></div>
+                    <div class="w-full md:w-[50%] lg:w-[25%] relative"><img src="https://placehold.co/500X600" alt=""
+                            class=" brightness-50"><button
+                            class=" absolute right-12 bottom-12 uppercase rounded-full py-1 px-4 bg-color2 text-secondary shadow">Shoes
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em"
+                                fill="currentColor" class=" inline-block mb-1">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                </path>
+                            </svg></button></div>
+                    <div class="w-full md:w-[50%] lg:w-[25%] relative"><img src="https://placehold.co/500X600"
+                            alt=""><button
+                            class=" absolute right-12 bottom-12 uppercase rounded-full py-1 px-4 bg-color2 text-secondary shadow">Jewlery
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em"
+                                fill="currentColor" class=" inline-block mb-1">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                </path>
+                            </svg></button></div>
+                    <div class="w-full md:w-[50%] lg:w-[25%] relative"><img src="https://placehold.co/500X600" alt=""
+                            class=" brightness-50"><button
+                            class=" absolute right-12 bottom-12 uppercase rounded-full py-1 px-4 bg-color2 text-secondary shadow">perfums
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em"
+                                fill="currentColor" class=" inline-block mb-1">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                </path>
+                            </svg></button></div>
+                </div>
+            </div>
+            <div class="py-4 md:py-6"></div>
+            <div class="relative z-20 flex items-center overflow-hidden bg-white dark:bg-gray-800">
+                <div class="container relative flex px-6 py-16 mx-auto">
+                    <div class="relative z-20 flex flex-col sm:w-2/3 lg:w-2/5"><span
+                            class="w-20 h-2 mb-12 bg-gray-800 dark:bg-white"></span>
+                        <h1
+                            class="flex flex-col text-6xl leading-none text-gray-800 uppercase sm:text-8xl dark:text-white text-color2">
+                            Be on<span class="text-5xl sm:text-7xl">Time</span></h1>
+                        <p class="text-sm text-gray-700 sm:text-base dark:text-white">Dimension of reality that makes
+                            change possible and understandable. An indefinite and homogeneous environment in which
+                            natural events and human existence take place.</p>
+                        <div class="flex mt-8"><a href="#"
+                                class=" uppercase border-2 border-color2 rounded-full py-2 px-5 text-secondary bg-color2 mr-4">Add
+                                to card</a><a href="#"
+                                class=" uppercase border-2 border-color2 rounded-full py-2 px-5 text-color2">Read
+                                more</a></div>
+                    </div>
+                    <div class="relative hidden sm:block sm:w-1/3 lg:w-3/5"><img src="https://placehold.co/300"
+                            class="max-w-xs m-auto md:max-w-sm"></div>
+                </div>
+            </div>
+        </main>
+        <div class="py-4 md:py-6"></div>
+        <footer class="mt-4">
+            <div class="footer border-t border-lightgray ">
+                <div class="w-full lg:w-[70%] lg:m-auto  lg:px-4">
+                    <div class="flex py-8 flex-wrap lg:flex-nowrap px-4 lg:px-0">
+                        <div class="w-full lg:flex-1"><img src="https://placehold.co/100X100" alt="">
+                            <div class=" grid grid-flow-col gap-4 w-4 py-3 items-center justify-between"><i
+                                    class="bi-facebook text-color2"></i><i class="bi-youtube text-color2"></i><i
+                                    class="bi-instagram text-color2"></i><i class="bi-twitter text-color2"></i><i
+                                    class="bi-tiktok text-color2"></i></div>
+                        </div>
+                        <div class="w-full lg:flex-1">
+                            <div class="border-b text-color2 font-semibold w-6 uppercase">Menu</div>
+                            <ul class="text-primary uppercase font-semibold text-[12px]">
+                                <li>Home</li>
+                                <li>Collection</li>
+                                <li>Men</li>
+                                <li>Women</li>
+                                <li>Kids</li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:flex-1">
+                            <div class="border-b text-color2 font-semibold w-6 uppercase">Account</div>
+                            <ul class="text-primary uppercase font-semibold text-[13px]">
+                                <li>Login</li>
+                                <li>order</li>
+                                <li>Whishlist</li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:flex-1">
+                            <h1 class=" text-color2 text-xl py-2">Subscribe for Newslater</h1>
+                            <div class="border border-lightgray rounded-full overflow-hidden lg:w-[70%]"><input
+                                    type="email" name="" placeholder="Email" class="p-1 px-3 w-full focus:outline-none"
+                                    id=""></div><button
+                                class=" text-secondary bg-color2 rounded-full p-1 px-3 mt-3">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-color2">
+                    <p class=" text-center text-secondary py-6">Powerd by Gipsyfare</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

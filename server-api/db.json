@@ -1,0 +1,134 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "phoneno": "+971834738473",
+      "email": "username@gmail.com",
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/",
+      "tiktok": "https://www.tiktok.com/"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "product_id": 2
+    },
+    {
+      "id": 2,
+      "product_id": 3
+    },
+    {
+      "product_id": 4,
+      "id": 3
+    },
+    {
+      "product_id": 3,
+      "id": 4
+    },
+    {
+      "product_id": 5,
+      "id": 5
+    },
+    {
+      "product_id": 1,
+      "id": 6
+    },
+    {
+      "product_id": 1,
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "product_name": "iPhone 14 pro max 256 black hk",
+      "product_costprice": 4500,
+      "product_saleprice": 4700,
+      "pooduct_rating": 3,
+      "product_img": "/static/media/dress.8ef23cff9eab05943b40.png"
+    },
+    {
+      "id": 2,
+      "product_name": "14 pro max 128 blk china",
+      "product_costprice": 4400,
+      "product_saleprice": 4450,
+      "pooduct_rating": 4,
+      "product_img": ""
+    },
+    {
+      "id": 3,
+      "product_name": "14 pro 256 gold japan",
+      "product_costprice": 4200,
+      "product_saleprice": 4350,
+      "pooduct_rating": 2,
+      "product_img": ""
+    },
+    {
+      "id": 4,
+      "product_name": "14 pro 256 gold cahanda",
+      "product_costprice": 4250,
+      "product_saleprice": 4300,
+      "pooduct_rating": 4,
+      "product_img": ""
+    },
+    {
+      "id": 5,
+      "product_name": "14 pro 256 silver chanada",
+      "product_costprice": 4180,
+      "product_saleprice": 4220,
+      "pooduct_rating": 4,
+      "product_img": ""
+    },
+    {
+      "id": 6,
+      "product_name": "14 pro 128 gold japan",
+      "product_costprice": 4170,
+      "product_saleprice": 4190,
+      "pooduct_rating": 5,
+      "product_img": ""
+    },
+    {
+      "id": 7,
+      "product_name": "14 pro 128 gold cahanda",
+      "product_costprice": 4160,
+      "product_saleprice": 4175,
+      "pooduct_rating": 4,
+      "product_img": ""
+    },
+    {
+      "id": 8,
+      "product_name": "14 pro 128 silver chanada",
+      "product_costprice": 4100,
+      "product_saleprice": 4140,
+      "pooduct_rating": 5,
+      "product_img": ""
+    }
+  ],
+  "users": [
+    {
+      "id": 72,
+      "username": "asim",
+      "password": "asim1263",
+      "email": "asim1263@gmail.com"
+    },
+    {
+      "id": 86,
+      "username": "asimjamil",
+      "password": "llockk",
+      "email": "asimjamil@gamil.com"
+    },
+    {
+      "id": 91,
+      "username": "dfkj34",
+      "password": "llock34",
+      "email": "fdhjhj@gamail.com"
+    },
+    {
+      "id": 92,
+      "username": "dfkj34",
+      "password": "llock34",
+      "email": "fdhjhj@gamail.com"
+    }
+  ]
+}
